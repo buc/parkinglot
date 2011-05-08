@@ -10,7 +10,7 @@ class SpotsController < ApplicationController
       spot.occupied = false
       spot.save
      end
-     @spots = Spot.all
+     @spots = Spot.find(:all, :order => "id")
     end
 
     respond_to do |format|

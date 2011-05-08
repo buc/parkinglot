@@ -954,3 +954,193 @@ Processing SpotsController#index (for 127.0.0.1 at 2011-05-04 23:48:32) [GET]
 Rendering template within layouts/spots
 Rendering spots/index
 Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:33:43) [GET]
+  [4;36;1mSpot Load (1.1ms)[0m   [0;1mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+Completed in 66ms (View: 42, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SpotsController#unoccupyspot (for 127.0.0.1 at 2011-05-08 09:33:45) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 7) [0m
+  [4;36;1mSpot Update (0.4ms)[0m   [0;1mUPDATE "spots" SET "updated_at" = '2011-05-08 14:33:46', "occupied" = 'f' WHERE "id" = 7[0m
+Redirected to http://localhost:3000/
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/spots/7/unoccupyspot]
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:33:46) [GET]
+  [4;35;1mSpot Load (1.0ms)[0m   [0mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SpotsController#occupyspot (for 127.0.0.1 at 2011-05-08 09:33:47) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mSpot Load (0.4ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 4) [0m
+  [4;35;1mSpot Update (0.5ms)[0m   [0mUPDATE "spots" SET "updated_at" = '2011-05-08 14:33:47', "occupied" = 't' WHERE "id" = 4[0m
+Redirected to http://localhost:3000/
+Completed in 19ms (DB: 1) | 302 Found [http://localhost/spots/4/occupyspot]
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:33:47) [GET]
+  [4;36;1mSpot Load (1.0ms)[0m   [0;1mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+Completed in 79ms (View: 72, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SpotsController#occupyspot (for 127.0.0.1 at 2011-05-08 09:33:49) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mSpot Load (0.3ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 9) [0m
+  [4;36;1mSpot Update (0.5ms)[0m   [0;1mUPDATE "spots" SET "updated_at" = '2011-05-08 14:33:49', "occupied" = 't' WHERE "id" = 9[0m
+Redirected to http://localhost:3000/
+Completed in 22ms (DB: 1) | 302 Found [http://localhost/spots/9/occupyspot]
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:33:49) [GET]
+  [4;35;1mSpot Load (1.0ms)[0m   [0mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SpotsController#unoccupyspot (for 127.0.0.1 at 2011-05-08 09:33:52) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mSpot Load (1.0ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 8) [0m
+  [4;35;1mSpot Update (0.5ms)[0m   [0mUPDATE "spots" SET "updated_at" = '2011-05-08 14:33:52', "occupied" = 'f' WHERE "id" = 8[0m
+Redirected to http://localhost:3000/
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/spots/8/unoccupyspot]
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:33:52) [GET]
+  [4;36;1mSpot Load (1.0ms)[0m   [0;1mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+Completed in 28ms (View: 22, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:41:59) [GET]
+  [4;35;1mSpot Load (1.2ms)[0m   [0mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+
+ActionView::TemplateError (undefined local variable or method `spot' for #<ActionView::Base:0x101e00d38>) on line #5 of app/views/spots/index.html.erb:
+2: <p>Click on your parking space below</p>
+3: <div id="parkinglot">
+4: 	
+5: 	<a <% if spot.occupied %>class="occupied"<% end %> href="<% if spot.occupied %>/spots/1/unoccupyspot<% else %>/spots/1/occupyspot<% end %>"></a>
+6: 	
+7: 		<a <% if spot.occupied %>class="occupied"<% end %> href="<% if spot.occupied %>/spots/2/unoccupyspot<% else %>/spots/2/occupyspot<% end %>"></a>
+8: 		
+
+    app/views/spots/index.html.erb:5
+    app/controllers/spots_controller.rb:16:in `index'
+
+Rendered rescues/_trace (152.0ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-05-08 09:44:02) [GET]
+
+SyntaxError (/Users/bucpage/sites/parkinglot/app/controllers/spots_controller.rb:13: syntax error, unexpected tASSOC, expecting kEND
+     @spots = Spot.all, :order => "id"
+                                 ^):
+  
+
+Rendered rescues/_trace (54.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:45:06) [GET]
+  [4;36;1mSpot Load (2.2ms)[0m   [0;1mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+Completed in 17ms (View: 11, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing SpotsController#unoccupyspot (for 127.0.0.1 at 2011-05-08 09:45:08) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mSpot Load (0.3ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 4) [0m
+  [4;36;1mSpot Update (0.4ms)[0m   [0;1mUPDATE "spots" SET "updated_at" = '2011-05-08 14:45:08', "occupied" = 'f' WHERE "id" = 4[0m
+Redirected to http://localhost:3000/
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/spots/4/unoccupyspot]
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:45:08) [GET]
+  [4;35;1mSpot Load (0.9ms)[0m   [0mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SpotsController#occupyspot (for 127.0.0.1 at 2011-05-08 09:45:09) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 11) [0m
+  [4;35;1mSpot Update (0.4ms)[0m   [0mUPDATE "spots" SET "updated_at" = '2011-05-08 14:45:09', "occupied" = 't' WHERE "id" = 11[0m
+Redirected to http://localhost:3000/
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/spots/11/occupyspot]
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:45:09) [GET]
+  [4;36;1mSpot Load (0.9ms)[0m   [0;1mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SpotsController#occupyspot (for 127.0.0.1 at 2011-05-08 09:45:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSpot Load (0.3ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 1) [0m
+  [4;36;1mSpot Update (0.3ms)[0m   [0;1mUPDATE "spots" SET "updated_at" = '2011-05-08 14:45:10', "occupied" = 't' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/spots/1/occupyspot]
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:45:10) [GET]
+  [4;35;1mSpot Load (1.0ms)[0m   [0mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SpotsController#unoccupyspot (for 127.0.0.1 at 2011-05-08 09:45:11) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 9) [0m
+  [4;35;1mSpot Update (0.3ms)[0m   [0mUPDATE "spots" SET "updated_at" = '2011-05-08 14:45:11', "occupied" = 'f' WHERE "id" = 9[0m
+Redirected to http://localhost:3000/
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/spots/9/unoccupyspot]
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:45:11) [GET]
+  [4;36;1mSpot Load (2.0ms)[0m   [0;1mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+Completed in 12ms (View: 5, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:45:12) [GET]
+  [4;35;1mSpot Load (1.0ms)[0m   [0mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SpotsController#unoccupyspot (for 127.0.0.1 at 2011-05-08 09:45:13) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mSpot Load (0.5ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 11) [0m
+  [4;35;1mSpot Update (0.4ms)[0m   [0mUPDATE "spots" SET "updated_at" = '2011-05-08 14:45:13', "occupied" = 'f' WHERE "id" = 11[0m
+Redirected to http://localhost:3000/
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/spots/11/unoccupyspot]
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:45:13) [GET]
+  [4;36;1mSpot Load (1.0ms)[0m   [0;1mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/]
