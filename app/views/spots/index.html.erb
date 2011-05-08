@@ -1,0 +1,7 @@
+
+<p>Click on your parking space below</p>
+<div id="parkinglot">
+	<% @spots.each do |spot| %>
+		<a <% if spot.occupied %>class="occupied"<% end %> href="<% if spot.occupied %><%= unoccupyspot_spot_path(spot.id) %><% else %><%= occupyspot_spot_path(spot.id) %><% end %>"></a>
+	<% end %>
+</div>

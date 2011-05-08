@@ -1,0 +1,16 @@
+<h1>Editing spot</h1>
+
+<% form_for(@spot) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :occupied %><br />
+    <%= f.check_box :occupied %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @spot %> |
+<%= link_to 'Back', spots_path %>
