@@ -10,8 +10,19 @@ class SpotsController < ApplicationController
       spot.occupied = false
       spot.save
      end
-     @spots = Spot.find(:all, :order => "id")
     end
+     @spot_1 = Spot.find(1)
+     @spot_2 = Spot.find(2)
+     @spot_3 = Spot.find(3)
+     @spot_4 = Spot.find(4)
+     @spot_5 = Spot.find(5)
+     @spot_6 = Spot.find(6)
+     @spot_7 = Spot.find(7)
+     @spot_8 = Spot.find(8)
+     @spot_9 = Spot.find(9)
+     @spot_10 = Spot.find(10)
+     @spot_11 = Spot.find(11)
+     @spot_12 = Spot.find(12)
 
     respond_to do |format|
       format.html # index.html.erb

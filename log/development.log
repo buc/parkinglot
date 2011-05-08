@@ -1144,3 +1144,357 @@ Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:45:13) [GET]
 Rendering template within layouts/spots
 Rendering spots/index
 Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:54:15) [GET]
+  [4;35;1mSpot Load (1.1ms)[0m   [0mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+
+ActionView::TemplateError (undefined method `occupied' for nil:NilClass) on line #6 of app/views/spots/index.html.erb:
+3: <div id="parkinglot">
+4: 	
+5: 	
+6: 	<a <% if @spot_1.occupied %>class="occupied"<% end %> href="<% if @spot_1.occupied %>/spots/1/unoccupyspot<% else %>/spots/1/occupyspot<% end %>"></a>
+7: 	
+8: 		<a <% if @spot_2.occupied %>class="occupied"<% end %> href="<% if @spot_2.occupied %>/spots/2/unoccupyspot<% else %>/spots/2/occupyspot<% end %>"></a>
+9: 		
+
+    app/views/spots/index.html.erb:6
+    app/controllers/spots_controller.rb:27:in `index'
+
+Rendered rescues/_trace (144.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSpot Load (0.3ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 1) [0m
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:56:09) [GET]
+  [4;36;1mSpot Load (1.3ms)[0m   [0;1mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+
+ActionView::TemplateError (undefined method `occupied' for nil:NilClass) on line #6 of app/views/spots/index.html.erb:
+3: <div id="parkinglot">
+4: 	
+5: 	
+6: 	<a <% if @spot_one.occupied %>class="occupied"<% end %> href="<% if @spot_one.occupied %>/spots/1/unoccupyspot<% else %>/spots/1/occupyspot<% end %>"></a>
+7: 	
+8: 		<a <% if @spot_2.occupied %>class="occupied"<% end %> href="<% if @spot_2.occupied %>/spots/2/unoccupyspot<% else %>/spots/2/occupyspot<% end %>"></a>
+9: 		
+
+    app/views/spots/index.html.erb:6
+    app/controllers/spots_controller.rb:27:in `index'
+
+Rendered rescues/_trace (75.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:56:11) [GET]
+  [4;35;1mSpot Load (1.1ms)[0m   [0mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+
+ActionView::TemplateError (undefined method `occupied' for nil:NilClass) on line #6 of app/views/spots/index.html.erb:
+3: <div id="parkinglot">
+4: 	
+5: 	
+6: 	<a <% if @spot_one.occupied %>class="occupied"<% end %> href="<% if @spot_one.occupied %>/spots/1/unoccupyspot<% else %>/spots/1/occupyspot<% end %>"></a>
+7: 	
+8: 		<a <% if @spot_2.occupied %>class="occupied"<% end %> href="<% if @spot_2.occupied %>/spots/2/unoccupyspot<% else %>/spots/2/occupyspot<% end %>"></a>
+9: 		
+
+    app/views/spots/index.html.erb:6
+    app/controllers/spots_controller.rb:27:in `index'
+
+Rendered rescues/_trace (69.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:56:15) [GET]
+  [4;36;1mSpot Load (2.0ms)[0m   [0;1mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+
+ActionView::TemplateError (undefined method `occupied' for nil:NilClass) on line #6 of app/views/spots/index.html.erb:
+3: <div id="parkinglot">
+4: 	
+5: 	
+6: 	<a <% if @spot_one.occupied %>class="occupied"<% end %> href="<% if @spot_one.occupied %>/spots/1/unoccupyspot<% else %>/spots/1/occupyspot<% end %>"></a>
+7: 	
+8: 		<a <% if @spot_2.occupied %>class="occupied"<% end %> href="<% if @spot_2.occupied %>/spots/2/unoccupyspot<% else %>/spots/2/occupyspot<% end %>"></a>
+9: 		
+
+    app/views/spots/index.html.erb:6
+    app/controllers/spots_controller.rb:27:in `index'
+
+Rendered rescues/_trace (148.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:57:49) [GET]
+  [4;35;1mSpot Load (0.9ms)[0m   [0mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+
+ActionView::TemplateError (undefined method `occupied' for nil:NilClass) on line #6 of app/views/spots/index.html.erb:
+3: <div id="parkinglot">
+4: 	
+5: 	
+6: 	<a <% if @spot_one.occupied %>class="occupied"<% end %> href="<% if @spot_one.occupied %>/spots/1/unoccupyspot<% else %>/spots/1/occupyspot<% end %>"></a>
+7: 	
+8: 		<a <% if @spot_2.occupied %>class="occupied"<% end %> href="<% if @spot_2.occupied %>/spots/2/unoccupyspot<% else %>/spots/2/occupyspot<% end %>"></a>
+9: 		
+
+    app/views/spots/index.html.erb:6
+    app/controllers/spots_controller.rb:28:in `index'
+
+Rendered rescues/_trace (160.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:57:51) [GET]
+  [4;36;1mSpot Load (0.9ms)[0m   [0;1mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+
+ActionView::TemplateError (undefined method `occupied' for nil:NilClass) on line #6 of app/views/spots/index.html.erb:
+3: <div id="parkinglot">
+4: 	
+5: 	
+6: 	<a <% if @spot_one.occupied %>class="occupied"<% end %> href="<% if @spot_one.occupied %>/spots/1/unoccupyspot<% else %>/spots/1/occupyspot<% end %>"></a>
+7: 	
+8: 		<a <% if @spot_2.occupied %>class="occupied"<% end %> href="<% if @spot_2.occupied %>/spots/2/unoccupyspot<% else %>/spots/2/occupyspot<% end %>"></a>
+9: 		
+
+    app/views/spots/index.html.erb:6
+    app/controllers/spots_controller.rb:28:in `index'
+
+Rendered rescues/_trace (74.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:59:23) [GET]
+  [4;35;1mSpot Load (1.0ms)[0m   [0mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+
+ActionView::TemplateError (undefined method `occupied' for nil:NilClass) on line #6 of app/views/spots/index.html.erb:
+3: <div id="parkinglot">
+4: 	
+5: 	
+6: 	<a <% if @spot_one.occupied %>class="occupied"<% end %> href="<% if @spot_one.occupied %>/spots/1/unoccupyspot<% else %>/spots/1/occupyspot<% end %>"></a>
+7: 	
+8: 		<a <% if @spot_2.occupied %>class="occupied"<% end %> href="<% if @spot_2.occupied %>/spots/2/unoccupyspot<% else %>/spots/2/occupyspot<% end %>"></a>
+9: 		
+
+    app/views/spots/index.html.erb:6
+    app/controllers/spots_controller.rb:28:in `index'
+
+Rendered rescues/_trace (97.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:59:24) [GET]
+  [4;36;1mSpot Load (1.0ms)[0m   [0;1mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+
+ActionView::TemplateError (undefined method `occupied' for nil:NilClass) on line #6 of app/views/spots/index.html.erb:
+3: <div id="parkinglot">
+4: 	
+5: 	
+6: 	<a <% if @spot_one.occupied %>class="occupied"<% end %> href="<% if @spot_one.occupied %>/spots/1/unoccupyspot<% else %>/spots/1/occupyspot<% end %>"></a>
+7: 	
+8: 		<a <% if @spot_2.occupied %>class="occupied"<% end %> href="<% if @spot_2.occupied %>/spots/2/unoccupyspot<% else %>/spots/2/occupyspot<% end %>"></a>
+9: 		
+
+    app/views/spots/index.html.erb:6
+    app/controllers/spots_controller.rb:28:in `index'
+
+Rendered rescues/_trace (94.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 09:59:26) [GET]
+  [4;35;1mSpot Load (3.0ms)[0m   [0mSELECT * FROM "spots" [0m
+Rendering template within layouts/spots
+Rendering spots/index
+
+ActionView::TemplateError (undefined method `occupied' for nil:NilClass) on line #6 of app/views/spots/index.html.erb:
+3: <div id="parkinglot">
+4: 	
+5: 	
+6: 	<a <% if @spot_one.occupied %>class="occupied"<% end %> href="<% if @spot_one.occupied %>/spots/1/unoccupyspot<% else %>/spots/1/occupyspot<% end %>"></a>
+7: 	
+8: 		<a <% if @spot_2.occupied %>class="occupied"<% end %> href="<% if @spot_2.occupied %>/spots/2/unoccupyspot<% else %>/spots/2/occupyspot<% end %>"></a>
+9: 		
+
+    app/views/spots/index.html.erb:6
+    app/controllers/spots_controller.rb:28:in `index'
+
+Rendered rescues/_trace (135.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSpot Load (0.3ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 1) [0m
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 10:03:05) [GET]
+  [4;36;1mSpot Load (0.9ms)[0m   [0;1mSELECT * FROM "spots" [0m
+  [4;35;1mSpot Load (1.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 1) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 2) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 3) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 4) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 5) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 6) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 7) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 8) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 9) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 10) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 11) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 12) [0m
+Rendering template within layouts/spots
+Rendering spots/index
+Completed in 22ms (View: 9, DB: 4) | 200 OK [http://localhost/]
+
+
+Processing SpotsController#occupyspot (for 127.0.0.1 at 2011-05-08 10:03:07) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSpot Load (0.3ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 3) [0m
+  [4;36;1mSpot Update (0.3ms)[0m   [0;1mUPDATE "spots" SET "updated_at" = '2011-05-08 15:03:07', "occupied" = 't' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/spots/3/occupyspot]
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 10:03:07) [GET]
+  [4;35;1mSpot Load (1.0ms)[0m   [0mSELECT * FROM "spots" [0m
+  [4;36;1mSpot Load (0.3ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 1) [0m
+  [4;35;1mSpot Load (0.4ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 2) [0m
+  [4;36;1mSpot Load (0.3ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 3) [0m
+  [4;35;1mSpot Load (0.3ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 4) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 5) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 6) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 7) [0m
+  [4;35;1mSpot Load (0.4ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 8) [0m
+  [4;36;1mSpot Load (1.0ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 9) [0m
+  [4;35;1mSpot Load (0.4ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 10) [0m
+  [4;36;1mSpot Load (0.3ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 11) [0m
+  [4;35;1mSpot Load (1.1ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 12) [0m
+Rendering template within layouts/spots
+Rendering spots/index
+Completed in 21ms (View: 2, DB: 6) | 200 OK [http://localhost/]
+
+
+Processing SpotsController#unoccupyspot (for 127.0.0.1 at 2011-05-08 10:03:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 1) [0m
+  [4;35;1mSpot Update (0.3ms)[0m   [0mUPDATE "spots" SET "updated_at" = '2011-05-08 15:03:09', "occupied" = 'f' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/spots/1/unoccupyspot]
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 10:03:09) [GET]
+  [4;36;1mSpot Load (1.0ms)[0m   [0;1mSELECT * FROM "spots" [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 1) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 2) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 3) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 4) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 5) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 6) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 7) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 8) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 9) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 10) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 11) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 12) [0m
+Rendering template within layouts/spots
+Rendering spots/index
+Completed in 95ms (View: 82, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing SpotsController#occupyspot (for 127.0.0.1 at 2011-05-08 10:03:09) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mSpot Load (0.4ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 7) [0m
+  [4;36;1mSpot Update (0.4ms)[0m   [0;1mUPDATE "spots" SET "updated_at" = '2011-05-08 15:03:10', "occupied" = 't' WHERE "id" = 7[0m
+Redirected to http://localhost:3000/
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/spots/7/occupyspot]
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 10:03:10) [GET]
+  [4;35;1mSpot Load (1.0ms)[0m   [0mSELECT * FROM "spots" [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 1) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 2) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 3) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 4) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 5) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 6) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 7) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 8) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 9) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 10) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 11) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 12) [0m
+Rendering template within layouts/spots
+Rendering spots/index
+Completed in 16ms (View: 3, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing SpotsController#occupyspot (for 127.0.0.1 at 2011-05-08 10:03:10) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 8) [0m
+  [4;35;1mSpot Update (0.3ms)[0m   [0mUPDATE "spots" SET "updated_at" = '2011-05-08 15:03:10', "occupied" = 't' WHERE "id" = 8[0m
+Redirected to http://localhost:3000/
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/spots/8/occupyspot]
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 10:03:10) [GET]
+  [4;36;1mSpot Load (1.0ms)[0m   [0;1mSELECT * FROM "spots" [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 1) [0m
+  [4;36;1mSpot Load (1.1ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 2) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 3) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 4) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 5) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 6) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 7) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 8) [0m
+  [4;35;1mSpot Load (0.4ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 9) [0m
+  [4;36;1mSpot Load (0.5ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 10) [0m
+  [4;35;1mSpot Load (0.3ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 11) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 12) [0m
+Rendering template within layouts/spots
+Rendering spots/index
+Completed in 18ms (View: 2, DB: 5) | 200 OK [http://localhost/]
+
+
+Processing SpotsController#occupyspot (for 127.0.0.1 at 2011-05-08 10:03:11) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mSpot Load (0.4ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 9) [0m
+  [4;36;1mSpot Update (1.2ms)[0m   [0;1mUPDATE "spots" SET "updated_at" = '2011-05-08 15:03:11', "occupied" = 't' WHERE "id" = 9[0m
+Redirected to http://localhost:3000/
+Completed in 13ms (DB: 2) | 302 Found [http://localhost/spots/9/occupyspot]
+
+
+Processing SpotsController#index (for 127.0.0.1 at 2011-05-08 10:03:11) [GET]
+  [4;35;1mSpot Load (1.0ms)[0m   [0mSELECT * FROM "spots" [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 1) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 2) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 3) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 4) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 5) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 6) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 7) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 8) [0m
+  [4;36;1mSpot Load (1.8ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 9) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 10) [0m
+  [4;36;1mSpot Load (0.2ms)[0m   [0;1mSELECT * FROM "spots" WHERE ("spots"."id" = 11) [0m
+  [4;35;1mSpot Load (0.2ms)[0m   [0mSELECT * FROM "spots" WHERE ("spots"."id" = 12) [0m
+Rendering template within layouts/spots
+Rendering spots/index
+Completed in 16ms (View: 2, DB: 5) | 200 OK [http://localhost/]

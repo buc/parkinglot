@@ -1,9 +1,29 @@
 
 <p>Click on your parking space below</p>
 <div id="parkinglot">
-	<% @spots.each do |spot| %>
-		<a <% if spot.occupied %>class="occupied"<% end %> href="<% if spot.occupied %><%= unoccupyspot_spot_path(spot.id) %><% else %><%= occupyspot_spot_path(spot.id) %><% end %>"></a>
-	<% end %>
 	
-
+	
+	<a <% if @spot_1.occupied %>class="occupied"<% end %> href="<% if @spot_1.occupied %>/spots/1/unoccupyspot<% else %>/spots/1/occupyspot<% end %>"></a>
+	
+		<a <% if @spot_2.occupied %>class="occupied"<% end %> href="<% if @spot_2.occupied %>/spots/2/unoccupyspot<% else %>/spots/2/occupyspot<% end %>"></a>
+		
+			<a <% if @spot_3.occupied %>class="occupied"<% end %> href="<% if @spot_3.occupied %>/spots/3/unoccupyspot<% else %>/spots/3/occupyspot<% end %>"></a>
+			
+				<a <% if @spot_4.occupied %>class="occupied"<% end %> href="<% if @spot_4.occupied %>/spots/4/unoccupyspot<% else %>/spots/4/occupyspot<% end %>"></a>
+				
+					<a <% if @spot_5.occupied %>class="occupied"<% end %> href="<% if @spot_5.occupied %>/spots/5/unoccupyspot<% else %>/spots/5/occupyspot<% end %>"></a>
+					
+				<a <% if @spot_6.occupied %>class="occupied"<% end %> href="<% if @spot_6.occupied %>/spots/6/unoccupyspot<% else %>/spots/6/occupyspot<% end %>"></a>
+				
+				<a <% if @spot_7.occupied %>class="occupied"<% end %> href="<% if @spot_7.occupied %>/spots/7/unoccupyspot<% else %>/spots/7/occupyspot<% end %>"></a>
+				
+					<a <% if @spot_8.occupied %>class="occupied"<% end %> href="<% if @spot_8.occupied %>/spots/8/unoccupyspot<% else %>/spots/8/occupyspot<% end %>"></a>
+					
+						<a <% if @spot_9.occupied %>class="occupied"<% end %> href="<% if @spot_9.occupied %>/spots/9/unoccupyspot<% else %>/spots/9/occupyspot<% end %>"></a>
+						
+					<a <% if @spot_10.occupied %>class="occupied"<% end %> href="<% if @spot_10.occupied %>/spots/10/unoccupyspot<% else %>/spots/10/occupyspot<% end %>"></a>
+					
+					<a <% if @spot_11.occupied %>class="occupied"<% end %> href="<% if @spot_11.occupied %>/spots/11/unoccupyspot<% else %>/spots/11/occupyspot<% end %>"></a>
+				
+					<a <% if @spot_12.occupied %>class="occupied"<% end %> href="<% if @spot_12.occupied %>/spots/12/unoccupyspot<% else %>/spots/12/occupyspot<% end %>"></a>
 </div>
